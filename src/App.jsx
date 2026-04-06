@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ttt from './assets/ttt.png'
 
 function Square({ value, onSquareClick }) {
   return (
@@ -53,7 +54,7 @@ function Board({ xIsNext, squares, onPlay }) {
       </div>
       </div>
             <div>
-        <img src="/src/assets/ttt.png" alt="TicTacToe" className='imagettt'/>
+        <img src={ttt} alt="foto" className='imagettt'/>
       </div>
       </div>
     </>

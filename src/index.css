@@ -79,9 +79,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  *{
-    /* border: #ff0000 solid 1px; */
-  }
+
   .containerP {
     display: flex;
     flex-direction: column;

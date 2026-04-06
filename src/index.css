@@ -1,0 +1,121 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: .3rem;
+  margin: .3rem;
+  
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b2046, #2a5298);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #ff0000, #eedb09, rgb(17, 255, 0), rgb(0, 255, 251), rgb(0, 42, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ .board-row {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.square {
+  width: 8rem;
+  height: 8rem;
+  cursor:pointer;
+  color: #0b2046;
+  border: rgb(255, 230, 0) solid 1px;
+  font-size: 2rem;
+}
+
+.containerP {
+  display: flex;
+  flex-direction: row;
+}
+.status {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  background: linear-gradient(90deg, #ff0000, #eedb09, rgb(17, 255, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imagettt {
+  margin-top: .6rem;
+  width: 25rem;
+  height: 27rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttondesc {
+  background-color: #0b2046;
+}
+
+.moveslist {
+  display: grid;
+  grid-template-columns: repeat(5 , 1fr);
+  margin-right: 2rem;
+  width: 56rem;
+}
+
+.dFooter {
+  border: #eedb09 solid 1px;
+  width: 100%;
+  
+}
+
+@media (max-width: 768px) {
+  *{
+    /* border: #ff0000 solid 1px; */
+  }
+  .containerP {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .moveslist {
+    grid-template-columns: repeat(4, 1fr);
+    margin: -4rem 0 0 0rem;
+    width: 100%;
+    
+  }
+
+  .square {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .imagettt {
+    width: 14rem;
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .status {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+
+}
+
